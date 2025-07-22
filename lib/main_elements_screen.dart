@@ -39,18 +39,19 @@ class _MainElementsState extends State<MainElements> {
         final nextName = prayerOrder[(idx + 1) % prayerOrder.length];
         final nextTime = formatTime(timings[nextName]!);
         return Column(
+          mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const SizedBox(height: 38),
+            const SizedBox(height: 20),
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: SizedBox(
-                height: 250,
+                height: 270,
                 width: double.infinity,
                 child: Card(
                   color: Colors.green,
                   child: Padding(
-                    padding: const EdgeInsets.all(10.0),
+                    padding: const EdgeInsets.all(8.0),
                     child: Row(
                       children: [
                         Expanded(
@@ -59,7 +60,7 @@ class _MainElementsState extends State<MainElements> {
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                const SizedBox(height: 60),
+                                const SizedBox(height: 30),
                                 Text(
                                   "$current Prayer",
                                   style: const TextStyle(
@@ -141,7 +142,7 @@ class _MainElementsState extends State<MainElements> {
                       color: ThemeData.dark().cardColor,
                       child: Column(
                         children: [
-                          const SizedBox(height: 28),
+                          const SizedBox(height: 24),
                           PTimeWidget(
                             isCurrPrayer: current == 'Fajr',
                             currPrayer: "Fajr",
