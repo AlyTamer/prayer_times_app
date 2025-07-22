@@ -1,16 +1,16 @@
-# prayer_times_app
+# Prayer Times App
 
-A new Flutter project.
+Simple Prayer Times App built with Flutter. Using the [https://aladhan.com/prayer-times-api] API.
+## Project Description
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+This app was built as a way to test my knoweldge with APIs, JSON parsing, and Flutter in general. It is a simple app that displays prayer times for a given location.
+The app only works for Cairo, Egypt at the moment, but it can be easily extended to support other locations by using the Aladhan API.
+In addition, when forking this repo, all that is needed is to change the city and country parameters in the api call to change to the speciifc city and country desired.
+## Features
+- Displays prayer times for a given location
+- Uses the Aladhan API to fetch prayer times
+- Simple and easy to use interface
+- Native Dark Mode
+- Supports Android
+- Highlights the current prayer time
+- Displays the next prayer time
